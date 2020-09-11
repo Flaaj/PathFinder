@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 95vw;
+}
+
+.grid {
+  width: 80vh;
+  height: 80vh;
+  margin: 0 auto;
+  background: black;
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(20, 1fr);
+}
+
+.el {
+  border: 1px solid black;
+  background: blueviolet;
+}
+
+.el--animated {
+  -webkit-animation: biggerEl 1s;
+          animation: biggerEl 1s;
+}
+
+.el--wall {
+  background: black;
+}
+
+button {
+  width: 200px;
+  height: 100px;
+  background: black;
+  color: white;
+}
+
+@-webkit-keyframes biggerEl {
+  0% {
+    transform: scale(1);
+    background: blueviolet;
+  }
+  30% {
+    transform: scale(1.4);
+    background: blue;
+    border-radius: 50%;
+  }
+  70% {
+    transform: scale(1.4);
+    background: blue;
+    border-radius: 50%;
+  }
+  0% {
+    transform: scale(1);
+    background: blueviolet;
+  }
+}
+
+@keyframes biggerEl {
+  0% {
+    transform: scale(1);
+    background: blueviolet;
+  }
+  30% {
+    transform: scale(1.4);
+    background: blue;
+    border-radius: 50%;
+  }
+  70% {
+    transform: scale(1.4);
+    background: blue;
+    border-radius: 50%;
+  }
+  0% {
+    transform: scale(1);
+    background: blueviolet;
+  }
+}
+/*# sourceMappingURL=main.css.map */
